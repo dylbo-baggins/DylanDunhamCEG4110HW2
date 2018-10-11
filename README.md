@@ -9,10 +9,12 @@ There is no special deployment.
 # Instructions for use:
 Below is the main menu. Here you can add clocks by tapping one of the two buttons. The clocks can be adjusted with the drop down select and any changes can be undone with the "undo" button. Changes can be redone as well with the "redo" button.
 
+![alt text](https://github.com/dylbo-baggins/DylanDunhamCEG4110HW2/blob/master/images/DylanDunhamCEG4110HW2ss.png)
+
 # Design
 The project is made up of 7 classes and 1 interface. It utilizes a model view control to keep the clocks consistant with each other and disallow any one clock from changing the time for all. It also utilizes a command design pattern to allow for undoing and redoing of changes to the model. UML diagram below.
 
-![alt text](https://github.com/dylbo-baggins/DylanDunhamCEG4110HW1/blob/master/SimpleDesignScheme.png)
+![alt text](https://github.com/dylbo-baggins/DylanDunhamCEG4110HW2/blob/master/images/DylanDunhamCEG4110HW2UML.png)
 
 
 ## MainView Class
@@ -22,7 +24,7 @@ The MainView class allows for user interaction and controls the events of the ap
 ## ClockModel Class
 #### Variables: hour, min, sec, weekday, mon, year, ctr
 #### Methods: int/void get/setHour, int/void get/setMin, int/void get/setWeekDay, int/void get/setDay, int/void get/setMon, int/void get/setYear
-The ClockModel class is the model for the model view controller design that is the source of all the views' info. It is updated through the clkCtr.
+The ClockModel class is the model for the model view controller design that is the source of all the views' info. It is updated through the clkCtr. Some functions are not explicitly listed in the source code itself due to dropdown functionality in android.
 
 ## clkCtr Class
 #### Variables: model, views, viewStrings
